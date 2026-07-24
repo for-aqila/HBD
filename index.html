@@ -59,7 +59,7 @@
 
       tampilKirimPesan = true;
 
-      nomorWhatsapp = "";
+      nomorWhatsapp = "089517499601";
 
       isKlikAudio = true;
 
@@ -70,7 +70,7 @@
         if (isKlikAudio) klikA.play();
         if (pesan) {
           await swalo.fire({ title: "Kirim pesannya ke wa ya" });
-          location.assign(`https://wa.me/${nomorWhatsapp}?text=${pesan}`);
+          location.assign(`https://wa.me/6289517499601${nomorWhatsapp}?text=${pesan}`);
         } else {
           await swalo.fire({ title: "Jangan dikosongin ya :)" });
           kirimPesan();
